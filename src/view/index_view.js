@@ -8,7 +8,7 @@ function setCampoCEP(){
     getCEP();
 }
 function setPessoa(){
-    get_Pessoa();
+    get_Pessoa(); //alterar //consultar
 }
 function setPost(){
     post_Pessoa();

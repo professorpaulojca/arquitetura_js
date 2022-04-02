@@ -32,11 +32,15 @@ export function get_Pessoa() {
         let element_nome = document.getElementById('text_nome');
         let element_sexo = document.getElementById('select_sexo');
         let element_cep = document.getElementById('text_cep');
+        let span_rua = document.getElementById('span_rua');
+        let span_bairro = document.getElementById('span_bairro');
         element_nome.value = pessoa.getNome();
         element_sexo.value = pessoa.getSexo();
         element_cep.value = pessoa.getCep();
         getDataFromCep(element_cep.value).then(data => {
             span_rua.innerHTML = data.logradouro;
+            span_bairro.innerHTML = data.bairro;
+                        
         });
     });
 }

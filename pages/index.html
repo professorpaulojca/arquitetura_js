@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura JavaScript</title>
+    <script type="module" src="/src/view/index_view.js"></script>
+</head>
+<body>
+    <div class="form">
+        <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="text_nome" placeholder="Digite seu nome">
+        </div>
+        <div class="campo">
+            <label for="select_sexo">Gênero</label>
+            <select id="select_sexo">
+            </select>
+
+        </div>
+        <div class="campo">
+            <label for="text_cep">CEP</label>
+            <input type="text" id="text_cep" placeholder="Digite seu CEP">
+            <div class="dados_cep">
+                <span id="span_rua">Rua ----------</span>
+            </div>
+        </div>
+        <div class="campo">
+            <input type="button" value="Post" id="btn_post"/>
+        </div>
+    </div>
+</body>
+</html>

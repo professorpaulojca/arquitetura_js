@@ -17,11 +17,13 @@ export function getComboSexo() {
 export async function getCEP() {
     let element_cep = document.getElementById('text_cep');
     let span_rua = document.getElementById('span_rua');
+    let span_bairro = document.getElementById('span_bairro');
     element_cep.addEventListener('keypress', (event) => {
         const keyName = event.key;
         if (keyName === 'Enter') {
             getDataFromCep(element_cep.value).then(data => {
                 span_rua.innerHTML = data.logradouro;
+                span_bairro.innerHTML = data.bairro;
             });
         }
     });
